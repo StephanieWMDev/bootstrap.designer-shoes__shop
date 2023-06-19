@@ -1,0 +1,24 @@
+{
+  "name": "bootstrap.designer-shoes__shop",
+  "version": "1.0.0",
+  "description": "Project using Bootstrap and Sass",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "sass",
+    "bootstrap"
+  ],
+  "author": "Stephanie",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "dart-sass": "^1.25.0",
+    "postcss-cli": "^10.1.0"
+  },
+  "devDependencies": {
+    "bootstrap": "^5.3.0",
+    "sass": "^1.63.4"
+  }
+}

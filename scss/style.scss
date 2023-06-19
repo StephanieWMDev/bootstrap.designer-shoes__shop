@@ -1,0 +1,180 @@
+@use '../scss/_custom.scss' as *;
+
+
+li{
+    list-style-type:none;
+}
+
+.btn-pill{
+    border:0.188rem solid $black;
+    padding:0.8rem 2.5rem;
+}
+.product-card{
+    border:none;
+}
+.card-text{
+    
+    color:$gray-600;
+    text-decoration: none;
+}
+.about-us{
+    a{
+        text-decoration:none;
+        padding-bottom:0.2rem;
+        text-decoration: underline 1px solid $black;
+    }
+}
+
+.newsletter{
+    form{
+        border:none;
+    }
+    input{
+        border:none;
+        height:3rem;
+        
+   
+    }
+}
+.sandal-img{
+    width: 100%;
+}
+
+@media screen and (max-width: 575.98px) { 
+  
+    .img-banner {
+        // width:111em;
+        // height:55em;
+        // max-height: 44.5em;
+        // min-width: 60%;
+        // transform:scale(1.2);
+        display:none;
+    }
+    .overlay-text{
+        position: absolute;
+        top: 40%;
+        left: 8%;
+       
+    } 
+
+ }
+
+// Small devices (landscape phones, 576px and up)
+@include media-breakpoint-down(sm) { 
+    .img-banner {
+        width:111em;
+        height:55em;
+        max-height: 44.5em;
+        min-width: 61%;
+        
+        
+    }
+    .overlay-text{
+    
+        position: absolute;
+        top: 40%;
+        left: 8%;
+    }
+   
+ }
+
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-up(md) { 
+    .img-banner {
+        width:111em;
+        height:55em;
+        max-height: 40.5em;
+        min-width: 58%;
+      
+    }
+    .overlay-text{
+    
+        position: absolute;
+        top: 46%;
+        left: 8%;
+        
+    }
+ }
+ // Large devices (desktops, 992px and up)
+@include media-breakpoint-up(lg) { 
+    .img-banner {
+        width:111em;
+        height:55em;
+        max-height: 34.5em;
+        min-width: 65%;
+    }
+    .overlay-text{
+    
+        position: absolute;
+        top: 56%;
+        left: 8%;
+    }
+ }
+ // X-Large devices (large desktops, 1200px and up)
+@include media-breakpoint-up(xl) { 
+    .img-banner {
+        width:111em;
+        height:55em;
+        max-height: 48em;
+        min-width: 59%;
+    }
+    .overlay-text{
+    
+        position: absolute;
+        top: 56%;
+        left: 8%;
+    }
+ }
+// XX-Large devices (larger desktops, 1400px and up)
+@include media-breakpoint-up(xxl) { 
+    .img-banner {
+        width:111em;
+        height:55em;
+        max-height: 52em;
+        min-width: 100%;
+    }
+    .overlay-text{
+    
+        position: absolute;
+        top: 56%;
+        left: 8%;
+    }
+
+}
+    .img-banner {
+      
+        // max-height: 33em;
+        // min-width: 61em;
+    }
+
+.marquee-container {
+    height: 2em;
+    overflow: hidden;
+    line-height: 30px;
+  
+    .marquee {
+      top: 0;
+      left: 100%;
+      width: 100%;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap;
+      animation: marquee 30s linear infinite;
+    }
+  
+    .marquee2 {
+      animation-delay: 15s;
+    }
+    b {
+      padding-left: 10px;
+    }
+  }
+  
+  @keyframes marquee {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: -100%
+    }
+  }
