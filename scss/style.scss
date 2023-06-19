@@ -37,7 +37,8 @@ li{
     }
 }
 .sandal-img{
-    width: 100%;
+  
+    padding:0;
 }
 
 @media screen and (max-width: 575.98px) { 
@@ -76,6 +77,9 @@ li{
         left: 8%;
     }
    
+ }
+ .footer{
+
  }
 
 // Medium devices (tablets, 768px and up)
